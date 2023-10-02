@@ -1,0 +1,43 @@
+defaultPulsarImageTag: 3.1.0
+
+components:
+  pulsar_manager: false
+  functions: false
+
+kube-prometheus-stack:
+  enabled: false
+
+zookeeper:
+  replicaCount: 3
+  resources:
+    requests:
+      memory: 256Mi
+      cpu: 0.1
+  volumes:
+    data:
+      local_storage: false
+
+bookkeeper:
+  replicaCount: 3
+  volumes:
+    journal:
+      size: 10Gi
+      local_storage: false
+    ledgers:
+      size: 30Gi
+      local_storage: false
+  resources:
+    requests:
+      memory: 512Mi
+      cpu: 0.2
+
+broker:
+  replicaCount: 3
+  resources:
+    requests:
+      memory: 512Mi
+      cpu: 0.2
+  configData:
+    managedLedgerDefaultEnsembleSize: "2"
+    managedLedgerDefaultWriteQuorum: "2"
+    managedLedgerDefaultAckQuorum: "2"
