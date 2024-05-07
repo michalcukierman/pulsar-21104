@@ -1,0 +1,60 @@
+{
+  "entriesAddedCounter" : 36786,
+  "numberOfEntries" : 36786,
+  "totalSize" : 4386265002,
+  "currentLedgerEntries" : 9176,
+  "currentLedgerSize" : 1094650536,
+  "lastLedgerCreatedTimestamp" : "2024-05-07T10:08:39.178Z",
+  "lastLedgerCreationFailureTimestamp" : "2024-05-07T10:16:13.48Z",
+  "waitingCursorsCount" : 0,
+  "pendingAddEntriesCount" : 0,
+  "lastConfirmedEntry" : "15:9139",
+  "state" : "ClosedLedger",
+  "ledgers" : [ {
+    "ledgerId" : 9,
+    "entries" : 27646,
+    "size" : 3295925181,
+    "offloaded" : false,
+    "underReplicated" : false
+  }, {
+    "ledgerId" : 15,
+    "entries" : 9140,
+    "size" : 1090339821,
+    "offloaded" : false,
+    "underReplicated" : false
+  } ],
+  "cursors" : {
+    "request-shared-subscription" : {
+      "markDeletePosition" : "9:-1",
+      "readPosition" : "9:2571",
+      "waitingReadOp" : false,
+      "pendingReadOps" : 0,
+      "messagesConsumedCounter" : 0,
+      "cursorLedger" : -1,
+      "cursorLedgerLastEntry" : -1,
+      "individuallyDeletedMessages" : "[]",
+      "lastLedgerSwitchTimestamp" : "2024-05-07T10:09:19.549Z",
+      "state" : "NoLedger",
+      "active" : false,
+      "numberOfEntriesSinceFirstNotAckedMessage" : 2572,
+      "totalNonContiguousDeletedMessagesRange" : 0,
+      "subscriptionHavePendingRead" : false,
+      "subscriptionHavePendingReplayRead" : false,
+      "properties" : { }
+    }
+  },
+  "schemaLedgers" : [ {
+    "ledgerId" : 1,
+    "entries" : 1,
+    "size" : 126,
+    "offloaded" : false,
+    "underReplicated" : false
+  } ],
+  "compactedLedger" : {
+    "ledgerId" : -1,
+    "entries" : -1,
+    "size" : -1,
+    "offloaded" : false,
+    "underReplicated" : false
+  }
+}
