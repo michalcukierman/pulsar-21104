@@ -14,7 +14,6 @@ public class Processor {
   private final AtomicLong inCount = new AtomicLong(0);
   @Incoming("requests-in")
   @Outgoing("dump-out")
-  @Blocking
   PulsarOutgoingMessage<String> process(PulsarIncomingMessage<String> in) {
     System.out.println(" - Processed: " + inCount.incrementAndGet());
     return PulsarOutgoingMessage.from(in);

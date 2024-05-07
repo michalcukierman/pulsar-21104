@@ -35,6 +35,17 @@
       <version>3.4.1</version>
     </dependency>
     <dependency>
+      <groupId>org.apache.pulsar</groupId>
+      <artifactId>pulsar-client-original</artifactId>
+      <version>3.2.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>org.apache.logging.log4j</groupId>
+          <artifactId>log4j-slf4j-impl</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-arc</artifactId>
     </dependency>
